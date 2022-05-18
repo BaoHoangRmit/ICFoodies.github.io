@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Title Image -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- link fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>About us</title>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="assets/css/about.css">
+</head>
+<body>
+
+    <div id="page-container">
+        <div id="page-header">
+            <a id="page-header-logo" href="">
+                <img src="assets/img/logo.png" alt="image">
+            </a>
+            <div id="page-header-content">
+                <ul class="page-header-content-menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="recipe.html" class="menu-link">
+                            Recipes 
+                            <i class='bx bx-chevron-down'></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Meal Types
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Vietnamese
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Countries
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Courses
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item">
+                                        <a href="recipe.html" class="menu-link">
+                                            Appetizer
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="recipe.html" class="menu-link">
+                                            Main
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>                                    
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="blog.html" class="menu-link">
+                            Blogs
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="page-header-content-option">
+                    <div class="option-search">
+                        <form class="search-box" action="#">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit"><i class="flaticon-search"></i></button>
+                        </form>
+                    </div>
+
+                    <ul class="page-header-content-menu" id="option-account">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <svg width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                d="M11 13.4815C12.5663 13.441 13.8649 12.8793 14.8958 11.7963C15.9268 10.7133 16.4615 9.34909 16.5 7.7037C16.4615 6.05832 15.9268 4.69412 14.8958 3.61111C13.8649 2.5281 12.5663 1.96637 11 1.92593C9.43372 1.96637 8.13511 2.5281 7.10417 3.61111C6.07322 4.69412 5.5385 6.05832 5.5 7.7037C5.5385 9.34909 6.07322 10.7133 7.10417 11.7963C8.13511 12.8793 9.43372 13.441 11 13.4815ZM11 15.4074C8.91856 15.3471 7.19033 14.5947 5.81533 13.1502C4.44033 11.7058 3.72411 9.89027 3.66667 7.7037C3.72411 5.51714 4.44033 3.70163 5.81533 2.25718C7.19033 0.81274 8.91856 0.0603457 11 0C13.0814 0.0603457 14.8097 0.81274 16.1847 2.25718C17.5597 3.70163 18.2759 5.51714 18.3333 7.7037C18.2759 9.89027 17.5597 11.7058 16.1847 13.1502C14.8097 14.5947 13.0814 15.3471 11 15.4074ZM20.1667 25.037V22.1481C20.1477 21.3258 19.8804 20.6437 19.3646 20.1019C18.8488 19.56 18.1995 19.2792 17.4167 19.2593H4.58333C3.8005 19.2792 3.15119 19.56 2.63542 20.1019C2.11964 20.6437 1.85228 21.3258 1.83333 22.1481V25.037C1.83333 25.3182 1.74747 25.549 1.57575 25.7294C1.40403 25.9098 1.18433 26 0.916667 26C0.649 26 0.429306 25.9098 0.257583 25.7294C0.0858613 25.549 0 25.3182 0 25.037V22.1481C0.0385 20.7839 0.487361 19.6505 1.34658 18.7479C2.20581 17.8453 3.28472 17.3738 4.58333 17.3333H17.4167C18.7153 17.3738 19.7942 17.8453 20.6534 18.7479C21.5126 19.6505 21.9615 20.7839 22 22.1481V25.037C22 25.3182 21.9141 25.549 21.7424 25.7294C21.5707 25.9098 21.351 26 21.0833 26C20.8157 26 20.596 25.9098 20.4242 25.7294C20.2525 25.549 20.1667 25.3182 20.1667 25.037Z"
+                                fill="#08080A" fill-opacity="0.96"/>
+                                </svg>
+                            </a>
+
+                            <ul class="dropdown-menu" id="dropdown-menu-account">
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        Login
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        Register
+                                    </a>
+                                </li>                                  
+                            </ul>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="page-body-about">
+            <section class="section-mar">
+                <div class="section-header">
+                    <h3>Topic</h3>
+                </div>
+                <div class="section-text">
+                    <p>topic text</p>
+                </div>
+            </section>
+
+            <section class="section-mar">
+                <div class="section-header">
+                    <h3>Team Name</h3>
+                </div>
+                <div class="section-text">
+                    <p>team name text</p>
+                </div>
+            </section>
+
+            <section class="section-mar">
+                <div class="section-header">
+                    <h3>Going deeper</h3>
+                </div>
+                <div class="section-text">
+                    <p>Group proccess</p>
+                    <p>Career plans</p>
+                    <p>Motivation</p>
+                    <p>Aims</p>
+                    <p>Future</p>
+                </div>
+            </section>
+
+            <section class="section-full">
+                <div class="section-full-contain">
+                    <div class="section-header">
+                        <h3>Our team</h3>
+                    </div>
+                    <div class="section-member">
+                        <div class="section-avatar-list">
+                            <div class="section-avatar section-avatar-1">
+                                <img src="assets/img/bh.jpg" alt="bh">
+                            </div>
+                            <div class="section-avatar section-avatar-2">
+                                <img src="assets/img/giang.jpg" alt="giang">
+                            </div>
+                            <div class="section-avatar section-avatar-3">
+                                <img src="assets/img/co.jpg" alt="co">
+                            </div>
+                            <!-- <div class="section-avatar section-avatar-4">
+                                <img src="assets/img/tl.jpg" alt="tl">
+                            </div> -->
+                        </div>
+                        <div class="section-para-list">
+                            <div class="section-para section-para-1">
+                                <img src="assets/img/Polygon.png" alt="tri">
+                                <p>I am Hoang Quoc Bao - s3926050, and I am currently trying to reach the goal of finishing my IT bachelor degree in RMIT by 2024. Before joining RMIT, I was a high school student, participating in both the IT class of Hanoi Amsterdam Highschool and the Developer Course of FPT Aptech Vietnam. I can proudly describe myself as a more experienced individual than my peers, due to my 3-years prior training with live and real business models. Despite being able to handle and analyze business concepts, I still lack the technical skills needed to be an all-around developer that I have always wanted to be in High School. Therefore, I hope to cherish and nurture my working skills and further improve my analytical mindset to be a stand-out in Vietnam IT Industry.</p>
+                            </div>
+
+                            <div class="section-para selected-para section-para-2">
+                                <img src="assets/img/Polygon.png" alt="tri">
+                                <p>My name is Nguyen Le Hang Giang, I am a second-year student at RMIT University Vietnam. Prior to this, I was in high school in Australia and had planned to go to the Chemical Engineering program in the United States because Chemistry was my favorite subject. I returned to Vietnam in 2020 for a gap year and ended up studying here due to COVID. Because there are few natural science majors at RMIT Vietnam, I chose International Business. Introduction to Information Technology and Programming are one of my general elective subjects, which are not related to Business at all. This is because I am always interested in natural sciences, and even though I normally perform better in social sciences, I want to challenge myself and try new things. Furthermore, I believe that these two general elective studies will offer me an advantage when studying my minor, Digital Marketing. Even if they do not, it is still a pleasant and educational experience for me.</p>
+                            </div>
+
+                            <div class="section-para section-para-3">
+                                <img src="assets/img/Polygon.png" alt="tri">
+                                <p>My name is Nguyen Thien Co. I have sparked an interest in technology since I am always attracted to computers and numerical problems. Furthermore, at Hanoi-Amsterdam Highschool, I well performed as an Informatics student, and this reinforced my confidence and prompted me to pursue my dream as a data analyst. Therefore, I have no hesitation in choosing college major but unfortunately, because of Covid-19, there is a delay in my plan so this is my first semester at RMIT. As a first-year student, despite having a little knowledge of programming, I was still struggling to adapt to an unfamiliar environment because I used to work independently and hardly communicate with others. However, I will try my best to have memorable experience at RMIT University.</p>
+                            </div>
+
+                            <!-- <div class="section-para section-para-4">
+                                <img src="assets/img/Polygon.png" alt="tri">
+                                <p>My name is Tran Lam with the student ID of s3927213. Right now, I am studying in the Bachelor of Information Technology program. I do not have much experience in IT (Information Technology) before I joined RMIT so I am going to have to work harder than I normally do. What made me interested in IT is that I have been drawn to this kind of technology before, but I have never understood it completely. So, I joined this course to figure out how devices like my phone work and have a better grasp of the Internet that we use every day. I will even be able to find a job in this field despite its competitive nature.</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-footer">
+            <a id="page-footer-logo" href="">
+                <img src="assets/img/logo.png" alt="image">
+            </a>
+            <div id="page-footer-content">
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Explore
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="index.html" class="menu-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="recipe.html" class="menu-link">
+                            Recipes
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last">
+                        <a href="blog.html" class="menu-link">
+                            Blogs
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Find us
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-instagram'></i>
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-twitter'></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Support
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="about.html" class="menu-link">
+                            About us
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="about.html" class="menu-link">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last" style="opacity: 0;">
+                        <a class="menu-link" style="cursor: default;">
+                            Our services
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu page-footer-content-menu-option">
+                    <li class="menu-item menu-item-header" style="margin-bottom: 16px;">
+                        <a href="#" class="menu-link active">
+                            Keep in touch
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a id="footer-option-note" class="menu-link">
+                            By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives.
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">              
+                        <div class="option-search" style="width: 100%; margin-top: 5px;">
+                            <form class="search-box" action="#">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <button type="submit"><i class="bx bx-chevron-right"></i></button>
+                            </form>
+                        </div>                       
+                    </li>
+                </ul>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/about.js"></script>
+</body>
+</html>

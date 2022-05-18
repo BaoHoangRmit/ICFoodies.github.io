@@ -1,0 +1,206 @@
+#page-body-recipe {
+	margin: 53px 72px 72px 72px;
+}
+
+#page-body-recipe-head {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 38px;
+	text-align: center;
+
+	margin-bottom: 44px;
+}
+
+#page-body-recipe-bigcontent {
+	display: flex;
+}
+
+#page-body-recipe-bigcontent-filter {
+	max-width: 306px;
+	width: 100%;
+	/*background-color: #F5F5F5;*/
+	margin-right: 24px;
+
+}
+
+#page-body-recipe-bigcontent-layout {
+	max-width: 966px;
+	width: 100%;
+	/*background-color: #F5F5F5;*/
+	/*height: 500px;*/
+}
+
+.page-body-recipe-line {
+	width: 100%;
+	height: 483px;
+	display: flex;
+}
+
+.page-body-recipe-card-item {
+	max-width: 306px;
+	height: 483px;
+	margin-right: 24px;
+	background-color: #F5F5F5;
+}
+
+.page-body-recipe-card-item:hover {
+	background-color: #F7886E;
+	color: white;
+}
+
+.page-body-recipe-card-item-img {
+	max-width: 306px;
+	max-height: 306px;
+}
+
+.page-body-recipe-card-item-head {
+	margin: 20px 0 0 20px;
+	max-height: 30px;
+}
+
+.page-body-recipe-card-item-head span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.page-body-recipe-card-item-rating {
+	margin: 8px 0 0 20px;
+	max-height: 16px;
+}	
+
+.page-body-recipe-card-item-rating span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.page-body-recipe-card-item-text {
+	margin: 17px 20px 20px 20px;
+	max-height: 66px;
+}
+
+.page-body-recipe-card-item-text span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	}
+
+
+/* Style the button that is used to open and close the collapsible content */
+.filter-collapsible {
+	border: none;
+	background-color: white;
+	/*box-shadow: 0px 1px 0px 0px #343434;*/
+	border-bottom: 1px solid #343434;
+	
+	padding: 15px 20px 15px 20px;
+	
+	cursor: pointer;
+	/*padding: 18px;*/
+	width: 100%;
+	
+	text-align: left;
+	/*outline: none;*/
+
+	/*font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;*/
+	font-size: 30px;
+	max-height: 57px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.filter-collapsible span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+	display: flex;
+	align-items: flex-start;
+	width: 90%;
+}
+
+#icon-button-filter1 {
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*#page-body-recipe-bigcontent-filter button .active, .ok-collapsible:hover {
+  background-color: #ccc;
+}*/
+
+/* Style the collapsible content. Note: hidden by default */
+.filter-content {
+  /*padding: 0 18px;*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /*background-color: #f1f1f1;*/
+  /*background-color: #EDEDED;*/
+
+  /*max-width: 266px;*/
+  /*height: 255px;*/
+  /*display: flex;*/
+  flex-direction: column;
+  /*align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;*/
+
+  /*justify-content: center;*/
+  align-items: center;
+
+  margin-top: 1px;
+}
+
+.filter-collapsible-item {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	padding: 0px 10px 0px 10px;
+	height: 51px;
+	background-color: white;
+	border: none;
+
+	font-size: 30px;
+
+	display: flex;
+	align-items: center;
+}
+
+.filter-collapsible-item:hover {
+	background-color: #EDEDED;
+}
+
+.filter-collapsible-item span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+
+	margin: 14px 0px 15px 24px;
+	width: 77%;
+}
+
+.box-in-filter {
+
+}
+
+

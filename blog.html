@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+	<!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Recipes CSS -->
+    <link rel="stylesheet" href="assets/css/recipe.css">
+
+    <!-- Title Image -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+	<title>Blog</title>
+
+</head>
+<body>
+	<div id="page-container">
+		<div id="page-header">
+            <a id="page-header-logo" href="">
+                <img src="assets/img/logo.png" alt="image">
+            </a>
+            <div id="page-header-content">
+                <ul class="page-header-content-menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link active">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="recipe.html" class="menu-link">
+                            Recipes 
+                            <i class='bx bx-chevron-down'></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Meal Types
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Vietnamese
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Countries
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="recipe.html" class="menu-link">
+                                    Courses
+                                    <i class='bx bx-chevron-down'></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="menu-item">
+                                        <a href="recipe.html" class="menu-link">
+                                            Appetizer
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="recipe.html" class="menu-link">
+                                            Main
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </li>                                    
+                        </ul>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="blog.html" class="menu-link">
+                            Blogs
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="about.html" class="menu-link">
+                            About us
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="page-header-content-option">
+                    <div class="option-search">
+                        <form class="search-box" action="#">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit"><i class="flaticon-search"></i></button>
+                        </form>
+                    </div>
+
+                    <ul class="page-header-content-menu" id="option-account">
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <svg width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                d="M11 13.4815C12.5663 13.441 13.8649 12.8793 14.8958 11.7963C15.9268 10.7133 16.4615 9.34909 16.5 7.7037C16.4615 6.05832 15.9268 4.69412 14.8958 3.61111C13.8649 2.5281 12.5663 1.96637 11 1.92593C9.43372 1.96637 8.13511 2.5281 7.10417 3.61111C6.07322 4.69412 5.5385 6.05832 5.5 7.7037C5.5385 9.34909 6.07322 10.7133 7.10417 11.7963C8.13511 12.8793 9.43372 13.441 11 13.4815ZM11 15.4074C8.91856 15.3471 7.19033 14.5947 5.81533 13.1502C4.44033 11.7058 3.72411 9.89027 3.66667 7.7037C3.72411 5.51714 4.44033 3.70163 5.81533 2.25718C7.19033 0.81274 8.91856 0.0603457 11 0C13.0814 0.0603457 14.8097 0.81274 16.1847 2.25718C17.5597 3.70163 18.2759 5.51714 18.3333 7.7037C18.2759 9.89027 17.5597 11.7058 16.1847 13.1502C14.8097 14.5947 13.0814 15.3471 11 15.4074ZM20.1667 25.037V22.1481C20.1477 21.3258 19.8804 20.6437 19.3646 20.1019C18.8488 19.56 18.1995 19.2792 17.4167 19.2593H4.58333C3.8005 19.2792 3.15119 19.56 2.63542 20.1019C2.11964 20.6437 1.85228 21.3258 1.83333 22.1481V25.037C1.83333 25.3182 1.74747 25.549 1.57575 25.7294C1.40403 25.9098 1.18433 26 0.916667 26C0.649 26 0.429306 25.9098 0.257583 25.7294C0.0858613 25.549 0 25.3182 0 25.037V22.1481C0.0385 20.7839 0.487361 19.6505 1.34658 18.7479C2.20581 17.8453 3.28472 17.3738 4.58333 17.3333H17.4167C18.7153 17.3738 19.7942 17.8453 20.6534 18.7479C21.5126 19.6505 21.9615 20.7839 22 22.1481V25.037C22 25.3182 21.9141 25.549 21.7424 25.7294C21.5707 25.9098 21.351 26 21.0833 26C20.8157 26 20.596 25.9098 20.4242 25.7294C20.2525 25.549 20.1667 25.3182 20.1667 25.037Z"
+                                fill="#08080A" fill-opacity="0.96"/>
+                                </svg>
+                            </a>
+
+                            <ul class="dropdown-menu" id="dropdown-menu-account">
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        Login
+                                    </a>
+                                </li>
+
+                                <li class="menu-item">
+                                    <a href="" class="menu-link">
+                                        Register
+                                    </a>
+                                </li>                                  
+                            </ul>                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+		<div id="page-body-recipe">
+            <div id="page-body-recipe-head">
+                <span>BLOGS</span>
+            </div>
+            <div id="page-body-recipe-bigcontent">
+                <div id="page-body-recipe-bigcontent-filter">
+                    <button type="button" class="filter-collapsible" onclick="changeIcon1()">
+                        <span>Meal Type</span>
+                        <i id='icon-button-filter1' class="bx bx-chevron-down" style="float: right;"></i>
+                    </button>
+                    <div class="filter-content">                     
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon2()">
+                            <span>Break Fast</span>
+                            <i id='icon-button-filter2' class="bx bxs-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon3()">
+                            <span>Brunch</span>
+                            <i id='icon-button-filter3' class="bx bx-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon4()">
+                            <span>Lunch</span>
+                            <i id='icon-button-filter4' class="bx bxs-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon5()">
+                            <span>Supper</span>
+                            <i id='icon-button-filter5' class="bx bx-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon6()">
+                            <span>Dinner</span>
+                            <i id='icon-button-filter6' class="bx bx-checkbox box-in-filter" style="float: right;"></i>
+                        </button>             
+                    </div>
+                    <button type="button" class="filter-collapsible" onclick="changeIcon7()">
+                        <span>Course</span>
+                        <i id='icon-button-filter7' class="bx bx-chevron-down" style="float: right;"></i>
+                    </button>
+                    <div class="filter-content">                     
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon8()">
+                            <span>Appetizer</span>
+                            <i id='icon-button-filter8' class="bx bx-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon9()">
+                            <span>Main</span>
+                            <i id='icon-button-filter9' class="bx bxs-checkbox box-in-filter" style="float: right;"></i>
+                        </button>
+                        <button type="button" class="filter-collapsible-item" onclick="changeIcon10()">
+                            <span>Dessert</span>
+                            <i id='icon-button-filter10' class="bx bx-checkbox box-in-filter" style="float: right;"></i>
+                        </button>    
+                    </div>
+                    <div style="text-align: right; margin-top: 45px;">
+                        <a href='#' style="color: #f35320; font-family: 'Open Sans' font-style: normal;
+                            font-weight: 600; font-size: 16px; line-height: 22px;">Clear filter</a>
+                    </div>
+                    
+                </div>
+                <div id="page-body-recipe-bigcontent-layout">
+                    <div class="page-body-recipe-line">
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <div class="page-body-recipe-card-item" style="margin-right: 0px;">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-body-recipe-line" style="margin-top: 24px;">
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <div class="page-body-recipe-card-item" style="margin-right: 0px;">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-body-recipe-line" style="margin-top: 24px;">
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <div class="page-body-recipe-card-item">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div>
+                        <!-- <div class="page-body-recipe-card-item" style="margin-right: 0px;">
+                            <div class="page-body-recipe-card-item-img">
+                                <img src="assets/img/foodcard.png" alt="image">
+                            </div>
+                            <div class="page-body-recipe-card-item-head">
+                                <span>Headline</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-rating">
+                                <span>23 reviews / 4.8 ratings</span>
+                            </div>
+                            <div class="page-body-recipe-card-item-text">
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+		</div>
+
+        <div id="page-footer">
+            <a id="page-footer-logo" href="">
+                <img src="assets/img/logo.png" alt="image">
+            </a>
+            <div id="page-footer-content">
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Explore
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="index.html" class="menu-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="recipe.html" class="menu-link">
+                            Recipes
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last">
+                        <a href="blog.html" class="menu-link">
+                            Blogs
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Find us
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-facebook-circle'></i>
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-instagram'></i>
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last">
+                        <a href="#" class="menu-link">
+                            <i class='bx bxl-twitter'></i>
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu">
+                    <li class="menu-item menu-item-header">
+                        <a class="menu-link active">
+                            Support
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="about.html" class="menu-link">
+                            About us
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a href="about.html" class="menu-link">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body menu-item-body-last" style="opacity: 0;">
+                        <a class="menu-link" style="cursor: default;">
+                            Our services
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="page-footer-content-menu page-footer-content-menu-option">
+                    <li class="menu-item menu-item-header" style="margin-bottom: 16px;">
+                        <a href="#" class="menu-link active">
+                            Keep in touch
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">
+                        <a id="footer-option-note" class="menu-link">
+                            By entering your email address below, you consent to receiving our newsletter with access to our latest collections, events and initiatives.
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item-body">              
+                        <div class="option-search" style="width: 100%; margin-top: 5px;">
+                            <form class="search-box" action="#">
+                                <input type="text" class="form-control" placeholder="Email Address">
+                                <button type="submit"><i class="bx bx-chevron-right"></i></button>
+                            </form>
+                        </div>                       
+                    </li>
+                </ul>
+
+                
+            </div>
+        </div>
+	</div>
+
+<script type="text/javascript">
+    var coll = document.getElementsByClassName("filter-collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + 73 + "px";
+        } 
+      });
+    }
+
+    var j1 = 1;
+    function changeIcon1() {
+      var element = document.getElementById("icon-button-filter1");
+        if (j1 % 2 == 1) {
+            element.classList.remove("bx-chevron-down");
+            element.classList.add("bx-chevron-up");
+        }
+        else {
+            element.classList.remove("bx-chevron-up");
+            element.classList.add("bx-chevron-down");
+        }
+        j1 = j1 + 1;
+    }
+
+    var j7 = 1;
+    function changeIcon7() {
+      var element = document.getElementById("icon-button-filter7");
+        if (j7 % 2 == 1) {
+            element.classList.remove("bx-chevron-down");
+            element.classList.add("bx-chevron-up");
+        }
+        else {
+            element.classList.remove("bx-chevron-up");
+            element.classList.add("bx-chevron-down");
+        }
+        j7 = j7 + 1;
+    }
+
+    var j3 = 1;
+    function changeIcon3() {
+      var element = document.getElementById("icon-button-filter3");
+        if (j3 % 2 == 1) {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        else {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        j3 = j3 + 1;
+    }
+
+    var j5 = 1;
+    function changeIcon5() {
+      var element = document.getElementById("icon-button-filter5");
+        if (j5 % 2 == 1) {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        else {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        j5 = j5 + 1;
+    }
+
+    var j6 = 1;
+    function changeIcon6() {
+      var element = document.getElementById("icon-button-filter6");
+        if (j6 % 2 == 1) {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        else {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        j6 = j6 + 1;
+    }
+
+    var j8 = 1;
+    function changeIcon8() {
+      var element = document.getElementById("icon-button-filter8");
+        if (j8 % 2 == 1) {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        else {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        j8 = j8 + 1;
+    }
+
+    var j10 = 1;
+    function changeIcon10() {
+      var element = document.getElementById("icon-button-filter10");
+        if (j10 % 2 == 1) {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        else {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        j10 = j10 + 1;
+    }
+
+    var j2 = 1;
+    function changeIcon2() {
+      var element = document.getElementById("icon-button-filter2");
+        if (j2 % 2 == 1) {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        else {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        j2 = j2 + 1;
+    }
+
+    var j4 = 1;
+    function changeIcon4() {
+      var element = document.getElementById("icon-button-filter4");
+        if (j4 % 2 == 1) {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        else {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        j4 = j4 + 1;
+    }
+
+    var j9 = 1;
+    function changeIcon9() {
+      var element = document.getElementById("icon-button-filter9");
+        if (j9 % 2 == 1) {
+            element.classList.remove("bxs-checkbox");
+            element.classList.add("bx-checkbox");
+        }
+        else {
+            element.classList.remove("bx-checkbox");
+            element.classList.add("bxs-checkbox");
+        }
+        j9 = j9 + 1;
+    }
+</script>
+
+
+</body>
+</html>

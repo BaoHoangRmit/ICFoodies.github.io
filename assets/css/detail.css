@@ -1,3 +1,131 @@
 #page-body-detail {
-	margin: 45px 72px 116px 72px;
+	margin: 45px 72px 121px 72px;
+}
+
+#page-body-detail-header {
+	width: 100%;
+	margin-bottom: 45px;
+}
+
+#page-body-detail-body {
+	display: flex;
+}
+
+#page-body-detail-header-headline {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 65px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+
+#page-body-detail-header-subtext {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+#page-body-detail-header-date {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#page-body-detail-body-content {
+	width: 100%;
+	max-width: 966px;
+	background-color: #C4C4C4;
+	margin-right: 24px;
+}
+
+#page-body-detail-body-ad {
+	width: 100%;
+	max-width: 306px;
+	max-height: 1054px;
+	background-color: #F5F5F5;
+}
+
+#page-body-detail-body-ad-info {
+	width: 100%;
+	max-height: 460px;
+	padding: 40px 16px 40px 16px;
+	box-shadow: 0px 1px 0px #808080;
+}
+
+.page-body-detail-body-ad-recent {
+	width: 100%;
+	max-height: 297px;
+	padding: 24px 59px 34px 16px;
+}
+
+#page-body-detail-body-ad-info-logo {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+#page-body-detail-body-ad-info-logo span {
+	font-family: 'Sedgwick Ave';
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+#page-body-detail-body-ad-info-team {
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+#page-body-detail-body-ad-info-team span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+#page-body-detail-body-ad-info-text {
+	text-align: center;
+}
+
+#page-body-detail-body-ad-info-text span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.page-body-detail-body-ad-recent-header {
+	margin-bottom: 32px;
+}
+
+.page-body-detail-body-ad-recent-header span {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.page-body-detail-body-ad-recent-list {	
+	margin-left: 20px;
+}
+
+.page-body-detail-body-ad-recent-list p {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	
+	margin: 0 0 18px 0;
 }

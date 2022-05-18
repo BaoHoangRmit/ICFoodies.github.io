@@ -3,7 +3,7 @@
 }
 
 body {
-  max-width: 1496px;
+  max-width: 1440px;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -13,8 +13,7 @@ a {
   color: #111111;
   font-weight: 600;
   text-decoration: none;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  
 }
 
 a:hover, a:focus {
@@ -23,8 +22,7 @@ a:hover, a:focus {
 }
 
 #page-container {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  
 }
 
 #page-header {
@@ -78,8 +76,7 @@ a:hover, a:focus {
   text-align: center;
   list-style: none;
 
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  
 }
 
 
@@ -97,8 +94,7 @@ a:hover, a:focus {
   /*align-items: center;*/
   text-align: left;
 
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  
 
 }
 
@@ -155,8 +151,7 @@ form.search-box button {
   border: 1px solid grey;
   border-left: none; /* Prevent double borders */
   cursor: pointer;
-  -webkit-transition: 1s;
-  transition: 1s;
+  /**/
 }
 
 form.search-box button:hover {
@@ -203,8 +198,8 @@ Transition error
   position: absolute;
   visibility: hidden;
   background: #ffffff;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
@@ -546,6 +541,7 @@ Need fix padding - font - style
   width: 100%;
   display: flex;
   flex-direction: row;
+  height: 1088px;
 }
 
 #page-body-trending-card {
@@ -585,6 +581,11 @@ Need fix padding - font - style
   width: 100%;
   background-color: #FFFFFF;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card-item:hover {
+  box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .card-item-image {
@@ -715,12 +716,12 @@ Slide still hover bad
   position: relative;
   /*margin: auto;*/
   /*margin-right: 40px;*/
-  background-color: white;
+
 }
 
-#page-body-new-slide:hover {
-  background-color: rgba(52, 52, 52, 0.1);
-}
+/*#page-body-new-slide:hover {
+  background-color: rgba(52, 52, 52, 0.8);
+}*/
 
 /* Hide the images by default */
 .mySlides {
@@ -735,6 +736,10 @@ Slide still hover bad
   max-width: 746px;
   width: 60%;
 }
+
+/*.mySlides img:hover {
+  filter: brightness(0.8);
+}*/
 
 .mySlides-content {
   display: flex;
@@ -783,11 +788,10 @@ Slide still hover bad
   border: none;
 }
 
-/*.mySlides-content-button button:hover {
-  background-color: white;
-  
+.mySlides-content-button button:hover {
+  background-color: #F14336;
   border: 1px solid #F44336;
-}*/
+}
 
 .mySlides-content-button button a {
   color: white;
