@@ -43,6 +43,7 @@
 	height: 483px;
 	margin-right: 24px;
 	background-color: #F5F5F5;
+	cursor: pointer;
 }
 
 .page-body-recipe-card-item:hover {
